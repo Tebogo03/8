@@ -42,8 +42,6 @@ public class Bird extends Animal {
 
     @Override
     public String toString() {
-        return "Bird{" +
-                "featherColorChukwu56985='" + featherColorChukwu56985 + '\'' +
-                '}';
+        return "Bird";
     }
 }

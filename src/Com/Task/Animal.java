@@ -1,6 +1,6 @@
 package Com.Task;
 
-public abstract class Animal {
+public abstract class Animal implements AnimalMove, AnimalName {
     private String nameChukwu56985;
     private int ageChukwu56985;
     private int weightChukwu56985;
@@ -8,6 +8,8 @@ public abstract class Animal {
         ageChukwu56985=weightChukwu56985= 0;
         nameChukwu56985 = "NN";
     }
+
+
 
     public Animal(String nameChukwu56985, int ageChukwu56985, int weightChukwu56985) {
         this.nameChukwu56985 = nameChukwu56985;
@@ -43,4 +45,21 @@ public abstract class Animal {
     }
     public abstract void eat(String foodnameChukwu56985);
     public abstract void getvoice();
+}
+interface AnimalBehaviour{
+    public void sleepChukwu56985 ();
+}
+interface AnimalMove{
+    public default void moveChukwu56985 (Animal nameChukwu56985){
+        System.out.println( nameChukwu56985 + " is moving ");
+
+    }
+}
+interface AnimalName{
+     static void nameChukwu56985( String nameChukwu56985 ){
+         System.out.println("Name of the Animal: "+ nameChukwu56985);
+
+    }
+
+
 }

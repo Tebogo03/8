@@ -12,5 +12,26 @@ public class Main {
         animal[2].getvoice();
         animal[5].getvoice();
 
+        AnimalBehaviour animalBehaviour[] = new AnimalBehaviour[3];
+        animalBehaviour[0] = new Dog("CHOPi",3,20,"carnivora","massdifi");
+        animalBehaviour[1] = new BlowFish("Drake",2,5,"grey","10");
+        animalBehaviour[2]= new Pigeon("David",4,15,"grey","spain");
+        animalBehaviour[1].sleepChukwu56985();
+        animalBehaviour[0].sleepChukwu56985();
+        animalBehaviour[2].sleepChukwu56985();
+
+        for (Animal a:animal
+             ) {a.moveChukwu56985(a);
+
+        }
+
+        for (Animal a:animal
+             ) {
+            AnimalName.nameChukwu56985(a.getNameChukwu56985());
+
+        }
+
+
     }
+
 }

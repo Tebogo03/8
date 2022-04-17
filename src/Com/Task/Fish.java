@@ -40,8 +40,6 @@ public class Fish extends Animal{
 
     @Override
     public String toString() {
-        return "Fish{" +
-                "scaleColourChukwu56985='" + scaleColourChukwu56985 + '\'' +
-                '}';
+        return "Fish";
     }
 }

@@ -1,6 +1,6 @@
 package Com.Task;
 
-public class BlowFish extends Fish{
+public class BlowFish extends Fish implements AnimalBehaviour, AnimalMove{
     private  String diameterChukwu56985;
     BlowFish(){
         super();
@@ -17,6 +17,16 @@ public class BlowFish extends Fish{
     }
     public void aport ( ) {
         System.out.println("Fish is Swimming. ") ;
+    }
+
+    @Override
+    public void moveChukwu56985(Animal nameChukwu56985) {
+        System.out.println(nameChukwu56985 + " swim");
+    }
+
+    @Override
+    public void sleepChukwu56985() {
+        System.out.println("Zzz");
     }
 
     @Override
@@ -44,8 +54,6 @@ public class BlowFish extends Fish{
 
     @Override
     public String toString() {
-        return "BlowFish{" +
-                "diameterChukwu56985='" + diameterChukwu56985 + '\'' +
-                '}';
+        return "BlowFish";
     }
 }

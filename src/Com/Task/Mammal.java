@@ -39,8 +39,6 @@ public class Mammal extends Animal{
 
     @Override
     public String toString() {
-        return "Mammal{" +
-                "orderChukwu56985='" + orderChukwu56985 + '\'' +
-                '}';
+        return "Mammal";
     }
 }

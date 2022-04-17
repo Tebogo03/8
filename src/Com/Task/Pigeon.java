@@ -1,6 +1,6 @@
 package Com.Task;
 
-public class Pigeon extends Bird{
+public class Pigeon extends Bird implements AnimalBehaviour, AnimalMove{
     private  String speciesChukwu56985;
 
     public Pigeon(){
@@ -17,10 +17,19 @@ public class Pigeon extends Bird{
         super(ageChukwu56985, featherColorChukwu56985);
         this.speciesChukwu56985 = speciesChukwu56985;
     }
+    @Override
+    public void sleepChukwu56985() {
+        System.out.println("Zzz");
+    }
+
+    @Override
+    public void moveChukwu56985(Animal nameChukwu56985) {
+        System.out.println(nameChukwu56985 + " fly");
+    }
 
     @Override
     public void getvoice() {
-        System.out.println(" Bird is making sound");
+        System.out.println("Bird is making sound");
     }
 
     @Override
@@ -44,8 +53,6 @@ public class Pigeon extends Bird{
 
     @Override
     public String toString() {
-        return "Pigeon{" +
-                "speciesChukwu56985='" + speciesChukwu56985 + '\'' +
-                '}';
+        return "Pigeon";
     }
 }
